@@ -25,6 +25,33 @@ body {
   padding-bottom: 10px;
 }
 
+.rtl-toggle {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] .chat-form {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .chat-form input {
+  text-align: right;
+}
+
+html[dir="rtl"] .product-card {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .selected-products,
+html[dir="rtl"] .chatbox {
+  text-align: right;
+}
+
+
 .logo {
   width: 250px;
   margin-bottom: 15px;
@@ -253,3 +280,20 @@ body {
 .generate-btn i {
   margin-right: 8px;
 }
+.product-card.selected {
+  border: 2px solid #ff003b;
+  background-color: #fff1f4;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: #ff003b;
+  color: white;
+  border: none;
+  margin-left: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+

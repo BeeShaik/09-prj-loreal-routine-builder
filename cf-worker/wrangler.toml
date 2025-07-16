@@ -1,0 +1,8 @@
+name = "mistral-proxy"
+type = "javascript"
+
+[vars]
+API_KEY = "your_actual_mistral_api_key"
+
+[env.production]
+workers_dev = true
